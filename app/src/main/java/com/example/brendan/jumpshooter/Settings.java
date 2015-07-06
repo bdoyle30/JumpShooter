@@ -1,25 +1,23 @@
 package com.example.brendan.jumpshooter;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class MainMenu extends ActionBarActivity {
+public class Settings extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_settings);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_settings, menu);
         return true;
     }
 
@@ -36,23 +34,5 @@ public class MainMenu extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    /** Called when the user clicks the Play button */
-    public void goToGame(View view) {
-        Intent intent = new Intent(this, Game.class);
-        startActivity(intent);
-    }
-
-    /** Called when the user clicks the Leaderboards button */
-    public void goToLeaderboards(View view) {
-        Intent intent = new Intent(this, Leaderboards.class);
-        startActivity(intent);
-    }
-
-    /** Called when the user clicks the Settings button */
-    public void goToSettings(View view) {
-        Intent intent = new Intent(this, Settings.class);
-        startActivity(intent);
     }
 }
