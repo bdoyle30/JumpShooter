@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">JumpShooter</string>
 
+    <string name="play">Play</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="leaderboards">Leaderboards</string>
+    <string name="settings">Settings</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_main_menu">Main Menu</string>
 </resources>
